@@ -8,7 +8,7 @@ INSTALL = install
 #CC = gcc
 
 #CFLAGS = -g -Wall -O -DDEBUG '-DPARSERBASE="/proj/lang/kmyacc-4.1.2/kmyacc"'
-CFLAGS = -Wall -O2 '-DPARSERBASE="$(PARLIB)/kmyacc"'
+CFLAGS = -m32 -Wall -O2 '-DPARSERBASE="$(PARLIB)/kmyacc"'
 
 
 OBJS = yacc.o grammar.o token.o lalr.o misc.o genparser.o compress.o
